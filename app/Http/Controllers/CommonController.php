@@ -25,6 +25,7 @@ class CommonController extends Controller
         }
     }
     public function show(){
+        $request=Request::all();
         $common = Common::simplePaginate(5);
         return view('common/show',['common'=>$common]);
     }

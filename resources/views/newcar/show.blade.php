@@ -77,9 +77,6 @@
 			</tr>
 			<?php endforeach ?>
 		</table>
-	<div class="container">
-		{{ $data->links() }}
-	</div>
 	</center>
 </body>
 </html>
