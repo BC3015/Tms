@@ -70,7 +70,7 @@
 				<td><?php echo $val->creator; ?></td>
 				<td><?php echo $val->creatordate; ?></td>
 				<td><?php echo $val->modifier; ?></td>
-				<td><?php echo $val->lastrdate; ?></td>
+				<td><?php echo $val->modifierdate; ?></td>
 				<td><?php echo $val->verifier; ?></td>
 				<td><?php echo $val->verifierdate; ?></td>
 				<td><a href="del?id=<?php echo $val->carid; ?>">删除</a>|<a href="upd?id=<?php echo $val->carid; ?>">修改</a></td>
@@ -78,11 +78,8 @@
 			<?php endforeach ?>
 		</table>
 	<div class="container">
-    @foreach ($data as $user)
-        {{ $user->carid }}
-    @endforeach
-    </div>
-    {{ $data->links() }}
+		{{ $data->links() }}
+	</div>
 	</center>
 </body>
 </html>

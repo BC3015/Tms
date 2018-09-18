@@ -38,8 +38,7 @@ class NewcarController extends Controller{
     //展示
     public function show(){
         //$res = $Tms_newcar->get($request);
-        $data=Newcar::get();
-        $data = DB::table('tms_newcar')->paginate(5);
+        $data = DB::table('tms_newcar')->paginate(2);
         return view('newcar/show',['data'=>$data]);
     }
 
