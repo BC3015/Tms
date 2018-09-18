@@ -76,6 +76,7 @@
 				<td><a href="del?id=<?php echo $val->carid; ?>">删除</a>|<a href="upd?id=<?php echo $val->carid; ?>">修改</a></td>
 			</tr>
 			<?php endforeach ?>
+			123
 		</table>
 	</center>
 </body>
